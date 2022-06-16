@@ -4,22 +4,127 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Estacionamento</title>
+  <title>Parking</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <input type="text" id="nome" placeholder="Digite o nome do veículo" autocomplete="off"/>
-  <input type="text" id="placa" placeholder="Digite a placa do veículo" autocomplete="off"/>
-  <button id="cadastrar">Cadastrar</button>
-  </body>
-  </br>
-  <table>
-    <thead>Nome</thead>
-    <thead>Placa</thead>
-    <thead>Entrada</thead>
-    <thead>Ações</thead>
-  </table>
+  <header >
+    <div class="flex-container menu">
+        <div><h1>ParkCar</h1></div>
+        <ul class="list-items"  >
+            <li><a href="#registre-se">Register</a></li>
+            <li><a href="#quem-somos">Who we are</a></li>
+            <li><a href="#servicos">Services</a></li>
+            <li><a href="#planos">Plans</a></li>
+        </ul>
+    </div>
+  </header>
+
+    <div class="flex-container apresentacao">
+      <div class="texto-apresentacao">
+          <h1>ParkCar</h1>
+          <p>The best service for you!</p>
+          <a href="" class="btn">Know more!</a>
+      </div>
+    </div>
+    <div class="flex-container" id="quem-somos">
+      <div>
+          <h2>Who are we</h2>
+          <p>When we think, where are we going to leave our car when we go on a trip or just make a quick purchase?
+            Know that we have the best parking services in town.</p>
+      </div>
+  </div>
+
+<br />
+
+  <div class="flex-container" id="registre-se">
+    <button class="btn">Register</button>
+
+    <input type="text" id="placa" placeholder="Enter vehicle license plate" autocomplete="off"/>
+    <input type="text" id="nome" placeholder="Enter vehicle name" autocomplete="off"/>
+
+  </div>
+  <div>
+    <table>
+      <thead>Name</thead>
+      <thead>Stage</thead>
+      <thead>Prohibited</thead>
+      <thead>Actions</thead>
+    </table>
     <tbody id="patio"></tbody>
     <script src="./script.js"></script>
-  </body>
+  </div>
+
+  <div class="container-externo">
+    <div class="flex-container" id="servicos">
+      <div>
+          <h2>Services</h2>
+      </div>
+
+      <div class="list-servicos">
+        <div class="item-servico">
+          <p>Interior Washing.</p>
+          <a href="#">Please request upon arrival.</a>
+        </div>
+
+        <div class="item-servico">
+          <p>Paint Wash</p>
+          <a href="#">Please request upon arrival.</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex-container" id="planos">
+
+    <div><h2>Monthly Plans</h2></div>
+
+    <div class="list-planos">
+      <div class="item-plano">
+          <h3>Plan 1</h3>
+          <ul>
+              <li>24h Support</li>
+              <li>Valet Services</li>
+              <li>Insurance theft.</li>
+          </ul>
+          <a href="#" class="btn">Know more!</a>
+      </div>
+
+      <div class="item-plano">
+        <h3>Plan 2</h3>
+        <br>
+        <ul>
+          <li>24h Support</li>
+          <li>Valet Services</li>
+          <li>Insurance theft.</li>
+          <li>Life insurance.</li>
+          <li>Towing service.</li>
+        </ul>
+        <a href="#" class="btn">Know more!</a>
+      </div>
+
+      <div class="item-plano">
+        <h3>Plan 3</h3>
+        <br>
+        <ul>
+          <li>24h Support</li>
+          <li>Valet Services</li>
+          <li>Insurance theft.</li>
+          <li>Life insurance.</li>
+          <li>Towing service.</li>
+          <li>Battery service.</li>
+          <li>Backup car.</li>
+        </ul>
+        <a href="#" class="btn">Know more!</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="flex-container footer">
+        <p>&copy; 2022 Project Parking</p>
+        <p>Desenvolvido por: Luciana Rodrigues</p>
+    </div>
+  </footer>
+</body>
 </html>
